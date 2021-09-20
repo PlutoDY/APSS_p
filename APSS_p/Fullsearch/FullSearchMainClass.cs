@@ -12,7 +12,10 @@ namespace APSS_p.Fullsearch
             //PicnicStart();
 
             // BoardCover
-            BoardCoverStart();
+            //BoardCoverStart();
+
+            // ClockSync
+            ClockSyncStart();
         }
 
         public static void PicnicStart()
@@ -23,6 +26,11 @@ namespace APSS_p.Fullsearch
         public static void BoardCoverStart()
         {
             BoardCover.Init();
+        }
+
+        public static void ClockSyncStart()
+        {
+            ClockSync.Init();
         }
     }
 }
