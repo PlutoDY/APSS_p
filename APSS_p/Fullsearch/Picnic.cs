@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace APSS_p
+namespace APSS_p.Fullsearch
 {
-    class Picnic
+    public static class Picnic
     {
         public static List<bool> pair = new List<bool>();
 
@@ -17,7 +17,7 @@ namespace APSS_p
 
         public static List<int> resultList = new List<int>();
 
-        public static void Main()
+        public static void Init()
         {
             int loopCounter = int.Parse(Console.ReadLine());
 
@@ -72,7 +72,7 @@ namespace APSS_p
         {
             foreach (int i in resultList)
             {
-                Console.Write(i + " ");
+                Console.WriteLine(i);
             }
         }
 
