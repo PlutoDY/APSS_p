@@ -76,8 +76,6 @@ namespace APSS_p.Fullsearch
             }
         }
 
-        private static int count = 0;
-
         private static void Push(int currentSwitch)
         {
             for(int i = 0; i < linkedClock[currentSwitch].Length; i++)
@@ -87,17 +85,6 @@ namespace APSS_p.Fullsearch
                 clocks[linkedNumber] += 3;
                 if (clocks[linkedNumber] >= 15) clocks[linkedNumber] = 3;
             }
-
-            /*var s = string.Empty;
-
-            for(int i = 0; i < 16; i++)
-            {
-                s += clocks[i] + " ";
-            }
-
-            Console.WriteLine($"CNT = {++count} | {s}");
-
-            s = string.Empty;*/
         }
 
         private static int Calculation(int currentSwitch)

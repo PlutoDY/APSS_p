@@ -15,7 +15,10 @@ namespace APSS_p.Fullsearch
             //BoardCoverStart();
 
             // ClockSync
-            ClockSyncStart();
+            //ClockSyncStart();
+
+            // BaseBallStart()
+            BaseBallStart();
         }
 
         public static void PicnicStart()
@@ -31,6 +34,11 @@ namespace APSS_p.Fullsearch
         public static void ClockSyncStart()
         {
             ClockSync.Init();
+        }
+
+        public static void BaseBallStart()
+        {
+            BaseBall.Init();
         }
     }
 }
